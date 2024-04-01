@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+body{
+  background-color: #282c34;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,8 +16,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,3 +36,146 @@
     transform: rotate(360deg);
   }
 }
+
+.wrapper{
+  background-color: #fff;
+  padding:  1em 1em;
+  position: absolute;
+  min-width: 300px;
+  max-width: 400px;
+  transform: translate(-50%, -50%);
+  top:50%;
+  left:50%;
+  border-radius: 10px;
+  box-shadow:  0 1em 3em rgba(192, 202, 222, 0.3);
+}
+#placement{
+  width: 80%;
+  height: 50px;
+  border: 2px solid black;
+  padding: 0.5em 1em;
+  outline: none;
+  border-radius: 5px; 
+}
+.options{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+select{
+  appearance: none;
+  width: 58%;
+  padding:  0.5em 1em;
+  font-size: 1.25em;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none ;
+  background-image: url(../src/assets/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 1.1em;
+  background-position: 6em;
+  outline: none;
+  border-radius: 0.3em;
+}
+select::-ms-expand{
+  display: none;
+}
+select option{
+  background-color: white;
+  color:black;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  font-size:1.15em;
+}
+.selected{
+  display: none;
+}
+.color-1{
+  appearance: none;
+  background-color: transparent;
+  width: 20%;
+  height: 150px;
+  outline: none;
+  border: 1px solid white;
+}
+.color-2{
+  appearance: none;
+  background-color: transparent;
+  width: 20%;
+  height: 150px;
+  outline: none;
+  border: 1px solid white;
+}
+
+
+.color-inp::-webkit-color-swatch{
+  border-radius: 0.3em;
+  border: 0.2em solid black;
+}
+
+.color-inp::-moz-color-swatch{
+  border-radius: 0.3em;
+  border: 0.2em solid black;
+}
+.box{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box button , .box a{
+  font-size : 1em;
+  padding: 0.8em 2em;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.box button:disabled{
+  background-color:black;
+  color: white;
+  border: 2px solid black;
+  font-weight:bold;
+  letter-spacing: 4px;
+}
+.box button{
+  background-color:black;
+  color: white; 
+  border: 2px solid black;
+}
+.box a{
+  background-color: black;
+  color:white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2em solid black;
+  width: 74%;
+} 
+.generate{
+  background-color: black;
+  color: white;
+  border: none ;
+  background-size: 1.1em;
+  background-position: 6em;
+  outline: none;
+  border-radius: 0.3em;
+  padding:  0.5em 1em;
+}
+
+.qr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
